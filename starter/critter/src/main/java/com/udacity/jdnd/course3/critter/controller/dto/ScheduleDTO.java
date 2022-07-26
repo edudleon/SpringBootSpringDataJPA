@@ -1,6 +1,6 @@
-package com.udacity.jdnd.course3.critter.schedule;
+package com.udacity.jdnd.course3.critter.controller.dto;
 
-import com.udacity.jdnd.course3.critter.user.EmployeeSkill;
+import com.udacity.jdnd.course3.critter.util.EmployeeSkill;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -12,8 +12,8 @@ import java.util.Set;
  */
 public class ScheduleDTO {
     private long id;
-    private List<Long> employeeIds;
-    private List<Long> petIds;
+    private List<Long> employeeList;
+    private List<Long> petList;
     private LocalDate date;
     private Set<EmployeeSkill> activities;
 
@@ -25,20 +25,20 @@ public class ScheduleDTO {
         this.id = id;
     }
     
-    public List<Long> getEmployeeIds() {
-        return employeeIds;
+    public List<Long> getEmployeeList() {
+        return employeeList;
     }
 
-    public void setEmployeeIds(List<Long> employeeIds) {
-        this.employeeIds = employeeIds;
+    public void setEmployeeList(List<Long> employeeList) {
+        this.employeeList = employeeList;
     }
 
-    public List<Long> getPetIds() {
-        return petIds;
+    public List<Long> getPetList() {
+        return petList;
     }
 
-    public void setPetIds(List<Long> petIds) {
-        this.petIds = petIds;
+    public void setPetList(List<Long> petList) {
+        this.petList = petList;
     }
 
     public LocalDate getDate() {

@@ -1,4 +1,6 @@
-package com.udacity.jdnd.course3.critter.user;
+package com.udacity.jdnd.course3.critter.controller.dto;
+
+import com.udacity.jdnd.course3.critter.util.EmployeeSkill;
 
 import java.time.DayOfWeek;
 import java.util.Set;
@@ -11,7 +13,7 @@ public class EmployeeDTO {
     private long id;
     private String name;
     private Set<EmployeeSkill> skills;
-    private Set<DayOfWeek> daysAvailable;
+    private Set<DayOfWeek> availability;
 
     public long getId() {
         return id;
@@ -37,11 +39,11 @@ public class EmployeeDTO {
         this.skills = skills;
     }
 
-    public Set<DayOfWeek> getDaysAvailable() {
-        return daysAvailable;
+    public Set<DayOfWeek> getAvailability() {
+        return availability;
     }
 
-    public void setDaysAvailable(Set<DayOfWeek> daysAvailable) {
-        this.daysAvailable = daysAvailable;
+    public void setAvailability(Set<DayOfWeek> availability) {
+        this.availability = availability;
     }
 }
